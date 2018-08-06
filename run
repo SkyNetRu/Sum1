@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+
+<?php
+require __DIR__.'/vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use Volosatov\SumCommand;
+
+
+$app = new Application("Welcome to first command script");
+$app->add(new SumCommand());
+$app->run();
